@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html,body{
+		height: 100%;
+		font-family: 'Open Sans';
+	}
+	footer{
+		width: 100%;
+		height: 70vh;
+		background: #30336b;
+	}
+	footer .arriba_footer{
+		position: relative;
+		width: 100%;
+		height: 165px;
+	}
+	footer .arriba_footer .loader .logo_uno,
+	footer .arriba_footer .loader .logo_dos,
+	footer .arriba_footer .loader .logo_tres{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	footer .arriba_footer .loader .logo_uno{
+		width: 70px;
+		-webkit-animation: animacion_uno 15s infinite linear;
+	}
+	footer .arriba_footer .loader .logo_dos{
+		width: 140px;
+		-webkit-animation: animacion_dos 15s infinite linear;
+		z-index: 20;
+	}
+	footer .arriba_footer .loader .logo_tres{
+		width: 450px;
+		top: 50px;
+	}
+	@-webkit-keyframes animacion_uno{
+		from{
+			-webkit-transform: rotate(0deg);
+		}
+		to{
+			-webkit-transform: rotate(359deg);
+		}
+	}
+	@-webkit-keyframes animacion_dos{
+		from{
+			-webkit-transform: rotate(359deg);
+		}
+		to{
+			-webkit-transform: rotate(0deg);
+		}
+	}
+	.parpadeo{
+		animation-name: parpadeo;
+		animation-duration: 10s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+
+		-webkit-animation-name:parpadeo;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+	}
+	@-moz-keyframes parpadeo{  
+	  0% { opacity: 1.0; }
+	  50% { opacity: 0.0; }
+	  100% { opacity: 1.0; }
+	}
+	@-webkit-keyframes parpadeo {  
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+	@keyframes parpadeo {  
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+	footer .medio_footer{
+		width: 100%;
+		text-align: center;
+		position: relative;
+	}
+	.footer_final .medio_footer .footer_links{
+	  color: #fff;
+	  margin: 10px 100px;
+	  padding: 0;
+	}
+	.footer_final .medio_footer .footer_links a{
+	  display:inline-block;
+	  line-height: 1.8;
+	  text-decoration: none;
+	  color:  inherit;
+	  padding: 10px 30px;
+	  font-size: 16pt;
+	}
+	.footer_final .medio_footer .footer_links a:hover{
+	  background: #f56f3a;
+	  border-radius: 50px;
+	  transition: 2000ms ease;
+	}
+	.footer_final .abajo_footer{
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	.footer_final .abajo_footer h3{
+	  color: #f0932b;
+	  font: normal 40px 'Open Sans', cursive;
+	  margin: 0;
+	}
+	.footer_final .abajo_footer h3 > span{
+	  color: #fff;
+	}
+	.footer_final .abajo_footer .empresa{
+	  color:  #fff;
+	  font-size: 20px;
+	  font-weight: normal;
+	}
+	.footer_final .abajo_footer .footer_nombre{
+	  color: #fff;
+	  font-size: 20px;
+	  font-weight: bold;
+	}
+	.footer_final .abajo_footer .footer_empresa{
+	  color: #fff;
+	  font-size: 20px;
+	  font-weight: bold;
+	}
+	@media screen and (max-width: 600px){
+		footer{
+			height: 80vh;
+		}
+	}
