@@ -1,0 +1,67 @@
+/*logo animado*/
+#logo_uno, #logo_dos{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+#logo_uno{
+	/*width: 220px;*/
+	-webkit-animation: animacion_uno 15s infinite cubic-bezier(0.9,0.1,0.1,0.1);
+
+}
+#logo_dos{
+	/*width: 500px;*/
+	-webkit-animation: animacion_dos 15s infinite linear;
+}
+@-webkit-keyframes animacion_uno{
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(359deg);
+	}
+}
+@-webkit-keyframes animacion_dos{
+	from{
+		-webkit-transform: rotate(359deg);
+	}
+	to{
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+.loaderContainer{
+	padding-top: 60%;
+
+	/*padding-bottom:  50px;*/
+	position: relative;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.loaderxx{
+	position: absolute;
+  /*z-index: 2;*/
+  background:#03CEe6;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:all .3s ease;
+}
+.loader-page::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+.loader-page::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}

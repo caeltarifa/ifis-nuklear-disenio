@@ -1,0 +1,29 @@
+/* ESTILOS DEL LOGO, CENTRADO DEL TEXTO, CENTREADO DEL VIDEO*/
+#loginlogo{
+	position: relative;
+	grid-area: loginlogo;
+	background-color: #03cee6;
+	right: auto;
+	left: auto;
+}
+
+.imglogo{
+	width:250px;
+	height:250px;
+	padding-top:50px;
+	
+}
+.txtlogo{
+	padding: 3%;
+	margin-right: 75px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+}
+#video{
+	grid-area: video;
+	background-color: #03cee6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
