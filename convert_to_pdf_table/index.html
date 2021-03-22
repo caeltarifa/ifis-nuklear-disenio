@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario NOTAM OACI</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css'>
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="app">
+    <v-app>
+      <v-container>
+        <v-row>
+          <v-col>
+            <h1>{{ heading }}</h1>
+            <v-btn color='orange' @click='generatePDF'>Generate PDF</v-btn>
+          </v-col>
+        </v-row>
+
+        <v-row>
+          <v-col>
+            <ul>
+              <!--
+  <li v-for='dato in datos_formulario'>{{ item }}</li>
+-->
+              <li>indicador_prioridad: {{datos_formulario.indicador_prioridad}}</li>
+              <li>direccion: {{datos_formulario.direccion}}</li>
+              <li>fecha_hora_deposito: {{datos_formulario.fecha_hora_deposito}}</li>
+              <li>indicador_remitente: {{datos_formulario.indicador_remitente}}</li>
+
+              <li>serie_numero_charly: {{datos_formulario.serie_numero_charly}}</li>
+              <li>serie_numero_alfa: {{datos_formulario.serie_numero_alfa}}</li>
+              <li>serie_numero_charly_repla: {{datos_formulario.serie_numero_charly_repla}}</li>
+              <li>serie_numero_alfa_repla: {{datos_formulario.serie_numero_alfa_repla}}</li>
+              <li>serie_numero_charly_cancel: {{datos_formulario.serie_numero_charly_cancel}}</li>
+              <li>serie_numero_alfa_cancel: {{datos_formulario.serie_numero_alfa_cancel}}</li>
+
+              <li>fir: {{datos_formulario.fir}}</li>
+              <li>codigo_notam: {{datos_formulario.codigo_notam}}</li>
+              <li>transito: {{datos_formulario.transito}}</li>
+              <li>objetivo: {{datos_formulario.objetivo}}</li>
+              <li>alcance: {{datos_formulario.alcance}}</li>
+              <li>limite_inferior: {{datos_formulario.limite_inferior}}</li>
+              <li>limite_superior: {{datos_formulario.limite_superior}}</li>
+              <li>coordenadas: {{datos_formulario.coordenadas}}</li>
+              <li>lugar: {{datos_formulario.lugar}}</li>
+
+              <li>desde: {{datos_formulario.desde}}</li>
+              <li>hasta: {{datos_formulario.hasta}}</li>
+              <li>horario: {{datos_formulario.horario}}</li>
+              <li>texto_notam: {{datos_formulario.texto_notam}}</li>
+              <li>limite_inferior_casilla: {{datos_formulario.limite_inferior_casilla}}</li>
+              <li>limite_superior_casilla: {{datos_formulario.limite_superior_casilla}}</li>
+              <li>firma: {{datos_formulario.firma}}</li>
+              <li>notam_charly: {{datos_formulario.notam_charly}}</li>
+              <li>notam_alfa: {{datos_formulario.notam_alfa}}</li>
+            </ul>
+          </v-col>
+        </v-row>
+
+      </v-container>
+    </v-app>
+  </div>
+  <!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.4/jspdf.plugin.autotable.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
