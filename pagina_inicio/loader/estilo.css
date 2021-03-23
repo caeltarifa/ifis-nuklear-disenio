@@ -1,0 +1,109 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+	font-family: sans-serif;
+	text-align: center;
+	background: -webkit-linear-gradient(bottom,#e84393,#5f27cd,#30336b,#000000);
+}
+.loader__dos #logo__uno,.loader__dos #logo__dos,.loader__dos #logo__tres{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.loader__dos #logo__uno{
+	width: 150px;
+	-webkit-animation: animacion_uno 15s infinite linear;
+}
+.loader__dos #logo__dos{
+	width: 285px;	
+	-webkit-animation: animacion_dos 15s infinite linear;
+	z-index: 20;
+}
+.loader__dos #logo__tres{
+	width: 590px;
+	top: 120px;
+}
+@-webkit-keyframes animacion_uno{
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(359deg);
+	}
+}
+@-webkit-keyframes animacion_dos{
+	from{
+		-webkit-transform: rotate(359deg);
+	}
+	to{
+		-webkit-transform: rotate(0deg);
+	}
+}
+.loader__dos .parpadeo__logo{
+	animation-name: parpadeo;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-name:parpadeo;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@media screen and (max-width: 950px){
+	.loader__dos #logo__uno{
+		width: 120px;
+	}
+	.loader__dos #logo__dos{
+		width: 250px;
+	}
+	.loader__dos #logo__tres{
+		width: 500px;
+		top: 110px;
+	}
+}
+@media screen and (max-width: 600px){
+	.loader__dos #logo__uno{
+		width: 100px;
+	}
+	.loader__dos #logo__dos{
+		width: 200px;
+	}
+	.loader__dos #logo__tres{
+		width: 400px;
+		top: 85px;
+	}
+}
+@media screen and (max-width: 450px){
+	.loader__dos #logo__uno{
+		width: 90px;
+	}
+	.loader__dos #logo__dos{
+		width: 175px;
+	}
+	.loader__dos #logo__tres{
+		width: 345px;
+		top: 85px;
+	}
+}

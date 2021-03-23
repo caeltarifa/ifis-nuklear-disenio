@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina Principal</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div class="loader__page">
+		<div class="loader">
+			<img src="loader/logo_1.svg" alt="logo_uno" class="inicial__uno">
+			<img src="loader/logo_2.svg" alt="logo_dos" class="inicial__dos">
+			<img src="loader/logo_3.svg" alt="logo_tres" class="inicial__tres loader__parpadeo">
+		</div>
+	</div>
+
+	<header>
+		<div class="wrapper">
+			<div class="logo__uno">
+				<img src="img/logo__1.png" alt="logo__1" class="img__uno">
+				<img src="img/logo__2.png" alt="logo__2" class="img__dos">
+			</div>
+		</div>
+	</header>
+
+	<div class="contenido">
+		<iframe src="contenido.html"></iframe>
+	</div>
+
+	<div class="galeria">
+		<div class="linea">
+			<div class="contenedor-imagenes">
+
+				<div class="imagen">
+					<img src="img/galeria/imagen4.png" alt="imagen_2">
+					<div class="overlay">
+						<h2>Boson</h2>
+					</div>
+				</div>
+
+				<div class="imagen">
+					<img src="img/galeria/imagen3.png" alt="imagen_3">
+					<div class="overlay">
+						<h2>Graviton</h2>
+					</div>
+				</div>
+
+				<div class="imagen">
+					<img src="img/galeria/imagen5.png" alt="imagen_4">
+					<div class="overlay">
+						<h2>Luczon</h2>
+					</div>
+				</div>
+
+				<div class="imagen">
+					<img src="img/galeria/imagen6.png" alt="imagen_5">
+					<div class="overlay">
+						<h2>Nuklear</h2>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<footer class="footer__abajo">
+		<div class="footer__arriba">
+			<div class="loader__footer">
+				<img src="img/footer/logo_1.svg" alt="svg_1" class="svg__uno">
+				<img src="img/footer/logo_2.svg" alt="svg_2" class="svg__dos">
+				<img src="img/footer/logo_3.svg" alt="svg_3" class="svg__tres parpadeo__footer">
+			</div>
+		</div>
+
+		<div class="footer__medio">
+			<div class="links">
+				<p class="footer__links">
+					<a href="#">Inicio</a>
+					<a href="#">Boson</a><span class="a"></span>
+					<a href="#">Graviton</a><span class="b"></span>
+          <a href="#">Luczon</a>
+					<a href="#">Nuklear</a>
+					<a href="#">Upsilon</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="footer__final">
+			<h3 class="primera">Ifis <span>Nuclear</span></h3>
+			<p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+			<span class="footer__nombre">&copy; Inc</span>
+			<p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+		</div>
+	</footer>
+
+	<script>
+  	$(window).on('load', function () {
+  		$(".loader__page").css({visibility:"hidden",opacity:"0"});    
+		});
+  </script>
+</body>
+</html>

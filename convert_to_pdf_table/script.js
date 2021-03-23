@@ -47,6 +47,7 @@ new Vue({
         limite_inferior_casilla: 'LIMITE INFERIOR CASILLA',
         limite_superior_casilla: 'LIMITE SUPERIOR CASILLA',
         firma: 'tecnico de turno',
+        
         notam_charly:"q",
         notam_alfa:"q",
       },
