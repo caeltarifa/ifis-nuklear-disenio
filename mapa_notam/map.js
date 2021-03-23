@@ -106,3 +106,26 @@ const color=[{'color':'#00CC00'},{'color':'#CCFF00'},{'color':'#0066CC'},{'color
 }
 initmap();
 
+//TARJETAS
+function tarjeta()
+{
+  
+  let tarjeta =
+  `<div class="container " style="margin-left: 5%;">
+  <div class="col">
+  <div class="row mb-5">
+  <div class="col-md-10">
+      <div class="card mb-15">
+          <div class="card-body" style="color: black;">
+              <h5 class="card-title mb-3">TARJETA 1</h5>
+              <a href="#" class="card-link">Información</a>
+              
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>`
+}
+
+tarjeta();
