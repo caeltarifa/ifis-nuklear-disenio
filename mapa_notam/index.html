@@ -20,153 +20,88 @@
 <body>
     <div class="contenedor">
         <div class="mapa">
-            <div id="map"></div>
+            <div id="map">
+            </div>
         </div>
 
         <div class="info_1">
             <h2>NOTAM VIGENTES</h2>
             <br>
-            <br>
-
-
-            <div class="container " style="margin-left: 5%;">
-                <div class="col">
-
-                    <div class="row mb-5">
-                        <div class="col-md-10">
-                            <div class="card mb-15">
-                                <div class="card-body" style="color: black;">
-                                    <h5 class="card-title mb-3">Card title</h5>
-                                    <h6 class="card-subtitle mb-3">Card subtitle</h6>
-                                    <p class="card-text mb-4">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
+            <div id="app">
+            <div class="container " style="margin-left: 5%;" v-on:click="saludar" v-for="x in punto">
+                <div class="container " style="margin-left: 5%;" v-for="x in punto">
+                    <div class="col">
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <div class="card mb-12">
+                                    <div class="card-body" v-click style="color: black;">
+                                        <h5 class="card-title mb-1">{{x.lugar}}</h5>
+                                        <a href="#" class="card-link">informacion</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row mb-5">
-                        <div class="col-md-10">
-                            <div class="card mb-15">
-                                <div class="card-body" style="color: black;">
-                                    <h5 class="card-title mb-3">Card title</h5>
-                                    <h6 class="card-subtitle mb-3">Card subtitle</h6>
-                                    <p class="card-text mb-4">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-5">
-                        <div class="col-md-10">
-                            <div class="card mb-15">
-                                <div class="card-body" style="color: black;">
-                                    <h5 class="card-title mb-3">Card title</h5>
-                                    <h6 class="card-subtitle mb-3">Card subtitle</h6>
-                                    <p class="card-text mb-4">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-5">
-                        <div class="col-md-10">
-                            <div class="card mb-15">
-                                <div class="card-body" style="color: black;">
-                                    <h5 class="card-title mb-3">Card title</h5>
-                                    <h6 class="card-subtitle mb-3">Card subtitle</h6>
-                                    <p class="card-text mb-4">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+        </div> 
+            
         </div>
 
         <div class="info_2">
             <h2>HISTORIAL DE NOTAMS</h2>
-            <div class="container py-2 mt-4 mb-4" style="width: 100%;">
-                <!-- timeline item 1 -->
-                <div class="row" style="color: black;">
-                    <!-- timeline item 1 left dot -->
-                    <div class="col-auto text-center flex-column d-none d-sm-flex">
-                        <div class="row h-50">
-                            <div class="col">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
+            <br>
+            <div id="app">
+                <div class="container py-2 mt-4 mb-4" style="width: 100%;">
+                    <!-- timeline item 1 -->
+                    <div class="row" style="color: black;">
+                        <!-- timeline item 1 left dot -->
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                        <h5 class="m-2">
-                            <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        </h5>
-                        <div class="row h-50">
-                            <div class="col border-right">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
-                        </div>
-                    </div>
-                    <!-- timeline item 1 event content -->
-                    <div class="py-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="float-right text-muted">Mon, Jan 9th 2019 7:00 AM</div>
-                                <h4 class="card-title text-muted">Day 1 Orientation</h4>
-                                <p class="card-text">Welcome to the campus, introduction and get started with the tour.
-                                </p>
+                        <!-- timeline item 1 event content -->
+                        <div class="py-2" v-on:click="historia">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted"></h4>
+                                    <p class="card-text"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
 
-                <!--/row-->
+                    <!--/row-->
+                    <!--DESDE AQUI SE PUEDE REsPETIR-->
 
-                <!--DESDE AQUI SE PUEDE REPETIR-->
 
+                    <!-- timeline item 4 -->
 
-                <!-- timeline item 4 -->
-                <div class="row" style="color: black;">
-                    <div class="col-auto text-center flex-column d-none d-sm-flex">
-                        <div class="row h-50">
-                            <div class="col border-right">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
-                        </div>
-                        <h5 class="m-2">
-                            <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        </h5>
-                        <div class="row h-50">
-                            <div class="col border-right">&nbsp;</div>
-                            <div class="col ">&nbsp;</div>
-                        </div>
-                    </div>
-                    <div class="py-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
-                                <h4 class="card-title">Day 4 Wrap-up</h4>
-                                <p>Join us for lunch in Bootsy's cafe across from the Campus Center.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js'></script>
-    <script src="./map.js"></script>
+
+
+
+
 
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js'></script>
+<script src="./map.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 </html>
