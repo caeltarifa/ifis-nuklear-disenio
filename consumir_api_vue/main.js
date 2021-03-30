@@ -4,10 +4,10 @@ new Vue({
     return {mensaje: 'Aqui retorna un valor del servidor!', distancia: "Aqui retorna la distancia (km) entre dos coordenadas!"}
   },
   methods: {
-    getMensaje (captura) {
-      const path = 'http://localhost:5000/api/v1.0/mensaje'
-      axios.get(path, {params: {var1: captura, var2: "nada"}}).then((respuesta) => {
-        this.mensaje = respuesta.data
+    getMensaje () {
+      const path = 'http://upsilon.aasana.ga/pibrealtime'
+      axios.get(path).then((respuesta) => {
+        alert ("Hola")
       }).catch((error) => {
         console.log(error)
       })
