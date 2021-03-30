@@ -8,12 +8,9 @@
 #btn-form{
 	margin-top: 3%;
 	margin-left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
-
-
-
 
 .container {
   position: relative;

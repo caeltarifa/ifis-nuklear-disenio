@@ -7,45 +7,50 @@
 	<title>Banner</title>
 
 
-	<link rel="stylesheet" href="./banner-style.css">
-	<link rel="stylesheet" href="./banner.css">
-	<link rel="stylesheet" href="./formulario_login.css">
-	<link rel="stylesheet" href="./logo_animado.css">
-	<link rel="stylesheet" href="./footer/css/estilo.css">
+	
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/formulario_login.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="container-fluid">
+	<div class="loader__page">
+		<div class="loader">
+			<img src="img/banner/logo_1.svg" alt="logo_uno" class="inicial__uno">
+			<img src="img/banner/logo_2.svg" alt="logo_dos" class="inicial__dos">
+			<img src="img/banner/logo_3.svg" alt="logo_tres" class="inicial__tres">
+		</div>
+	</div>
+
 	<!--logo animado-->
 	<div class="row" style="height: 650px;">
 		<div class="col-lg-6" id="loginlogo">
 
 			<div class="loaderContainer">
-				<div class="loaderxx">
-					<img src="./recursos/logo_1.svg" alt="primer_svg" id="logo_uno">
-					<img src="./recursos/logo_2.svg" alt="segundo_svg" id="logo_dos">
+				<div class="loader__banner">
+					<img src="img/banner/logo_1.svg" alt="logo_uno" id="banner__logo1">
+					<img src="img/banner/logo_2.svg" alt="logo_dos" id="banner__logo2">
+					<img src="img/banner/logo_3.svg" alt="logo_tres" id="banner__logo3">
 				</div>
 			</div>
 
 			<p class="txtlogo">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta sequi, provident aliquam laborum
-				adipisci consequatur tempora esse quibusdam fugit.
+				Bienvenido a mi Sitio Web
 			</p>
 
 			<!-- Boton modal Login-->
 			<div class=btn-container>
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLogin"
-					id="btn-form">
+					id="btn-form" style="background:#f39c12">
 					Inicio Sesión
 				</button>
 			</div>
@@ -89,15 +94,41 @@
 		</div>
 
 		<div class="col-lg-6" id="video">
-			<iframe width="500px" height="500px" src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
+			<iframe width="500px" height="250px" src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
 		</div>
 
+		<footer class="footer__abajo">
+			<div class="footer__arriba">
+				<div class="loader__footer">
+					<img src="img/footer/logo_1.svg" alt="svg_1" class="footer__svg__uno">
+					<img src="img/footer/logo_2.svg" alt="svg_2" class="footer__svg__dos">
+					<img src="img/footer/logo_3.svg" alt="svg_3" class="footer__svg__tres parpadeo__footer">
+				</div>
+			</div>
+
+			<div class="footer__medio">
+				<div class="links">
+					<p class="footer__links">
+						<a href="#">Inicio</a>
+						<a href="#">Boson</a>
+						<a href="#">Graviton</a>
+						<a href="#">Luczon</a>
+						<a href="#">Nuklear</a>
+						<a href="#">Upsilon</a>	
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__final">
+				<h3 class="primera">Ifis <span>Nuclear</span></h3>
+				<p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+				<span class="footer__nombre">&copy; Inc</span>
+				<p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+			</div>
+		</footer>
 	</div>
-
-
-
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -108,6 +139,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
+
+	<script>
+		$(window).on('load', function () {
+			$(".loader__page").css({visibility:"hidden",opacity:"0"});    
+		});
+	</script>
 	<script>
 		function w3_open() {
 			document.getElementById("main").style.marginRight = "25%";
@@ -122,5 +159,4 @@
 		}
 	</script>
 </body>
-
 </html>

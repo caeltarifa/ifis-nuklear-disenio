@@ -3,59 +3,17 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="52.918" y1="75" x2="97.0811" y2="75">
-	<stop  offset="0" style="stop-color:#4BA0B0"/>
-	<stop  offset="1" style="stop-color:#D29D37"/>
-</linearGradient>
-<circle fill="url(#SVGID_1_)" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" cx="75" cy="75.001" r="22.082"/>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="21.6318" y1="75.4941" x2="128.6309" y2="75.4941">
-	<stop  offset="0" style="stop-color:#D29D37"/>
-	<stop  offset="0.2939" style="stop-color:#A89F61"/>
-	<stop  offset="0.7765" style="stop-color:#65A09C"/>
-	<stop  offset="1" style="stop-color:#4BA0B0"/>
-</linearGradient>
-<circle fill="none" stroke="url(#SVGID_2_)" stroke-width="5" stroke-miterlimit="10" cx="75.131" cy="75.494" r="51"/>
+<circle fill="none" stroke="#335BA5" stroke-width="5" stroke-miterlimit="10" cx="75.131" cy="75.494" r="51"/>
 <g>
-	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="12.6982" y1="67.3779" x2="15.6318" y2="67.3779">
-		<stop  offset="0" style="stop-color:#4BA0B0"/>
-		<stop  offset="0.0566" style="stop-color:#5BA0A4"/>
-		<stop  offset="0.2034" style="stop-color:#80A086"/>
-		<stop  offset="0.354" style="stop-color:#9E9F6A"/>
-		<stop  offset="0.5069" style="stop-color:#B59F54"/>
-		<stop  offset="0.6631" style="stop-color:#C59E44"/>
-		<stop  offset="0.8247" style="stop-color:#CF9D3A"/>
-		<stop  offset="1" style="stop-color:#D29D37"/>
-	</linearGradient>
-	<path fill="url(#SVGID_3_)" stroke="#FFFFFF" stroke-miterlimit="10" d="M15.632,68.356c0,0.659-0.361,1.195-0.807,1.195h-1.32
+	<path fill="#1EA4C9" stroke="#FFFFFF" stroke-miterlimit="10" d="M15.632,68.356c0,0.659-0.361,1.195-0.807,1.195h-1.32
 		c-0.445,0-0.807-0.536-0.807-1.195v-1.957c0-0.659,0.361-1.194,0.807-1.194h1.32c0.445,0,0.807,0.535,0.807,1.194V68.356z"/>
 	<g>
-		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="21.2246" y1="58.062" x2="26.957" y2="58.062">
-			<stop  offset="0" style="stop-color:#4BA0B0"/>
-			<stop  offset="0.6379" style="stop-color:#A49F64"/>
-			<stop  offset="1" style="stop-color:#D29D37"/>
-		</linearGradient>
-		<ellipse fill="url(#SVGID_4_)" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.091" cy="58.062" rx="2.866" ry="7.143"/>
-		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="32.7412" y1="67.3779" x2="35.6738" y2="67.3779">
-			<stop  offset="0" style="stop-color:#4BA0B0"/>
-			<stop  offset="0.1263" style="stop-color:#54A0A9"/>
-			<stop  offset="0.3427" style="stop-color:#6DA096"/>
-			<stop  offset="0.623" style="stop-color:#94A073"/>
-			<stop  offset="0.9533" style="stop-color:#CA9E3F"/>
-			<stop  offset="1" style="stop-color:#D29D37"/>
-		</linearGradient>
-		<path fill="url(#SVGID_5_)" stroke="#FFFFFF" stroke-miterlimit="10" d="M35.674,68.356c0,0.659-0.36,1.195-0.806,1.195h-1.32
+		<ellipse fill="#1EA4C9" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.091" cy="58.062" rx="2.866" ry="7.143"/>
+		<path fill="#1EA4C9" stroke="#FFFFFF" stroke-miterlimit="10" d="M35.674,68.356c0,0.659-0.36,1.195-0.806,1.195h-1.32
 			c-0.445,0-0.807-0.536-0.807-1.195v-1.957c0-0.659,0.361-1.194,0.807-1.194h1.32c0.445,0,0.806,0.535,0.806,1.194V68.356z"/>
 		<g id="XMLID_2_">
 			<g>
-				<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="6.3965" y1="72.998" x2="41.8672" y2="72.998">
-					<stop  offset="0" style="stop-color:#4BA0B0"/>
-					<stop  offset="0.1238" style="stop-color:#51A0AB"/>
-					<stop  offset="0.305" style="stop-color:#63A09E"/>
-					<stop  offset="0.5215" style="stop-color:#80A086"/>
-					<stop  offset="0.763" style="stop-color:#A79F62"/>
-					<stop  offset="0.9951" style="stop-color:#D29D37"/>
-				</linearGradient>
-				<polygon fill="url(#SVGID_6_)" points="41.867,71.287 41.867,72.917 29.535,70.254 26.821,70.146 25.951,79.979 31.927,82.856 
+				<polygon fill="#1EA4C9" points="41.867,71.287 41.867,72.917 29.535,70.254 26.821,70.146 25.951,79.979 31.927,82.856 
 					31.927,84.975 25.247,83.453 23.943,87.256 22.802,83.453 16.336,84.975 16.336,83.127 22.258,79.979 21.606,70.146 
 					18.185,70.365 6.396,73.135 6.396,71.668 21.225,63.41 21.336,58.74 26.821,58.74 27.091,62.707 				"/>
 			</g>
@@ -85,4 +43,5 @@
 		</g>
 	</g>
 </g>
+<circle fill="#335BA5" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="75" cy="75.495" r="27.323"/>
 </svg>
