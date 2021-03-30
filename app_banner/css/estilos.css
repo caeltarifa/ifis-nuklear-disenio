@@ -103,7 +103,7 @@ html,body{
 	display:flex;
   justify-content:center;
   align-items:center;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .loaderContainer .loader__banner #banner__logo1,
 .loaderContainer .loader__banner #banner__logo2,
@@ -184,7 +184,7 @@ html,body{
 #loginlogo{
 	position: relative;
 	grid-area: loginlogo;
-	background: -webkit-linear-gradient(top,#0399cf,#289ec9, #289ec9, #0399cf);
+	background: #2980b9/* -webkit-linear-gradient(top,#0399cf,#289ec9, #289ec9, #0399cf) */;
 	right: auto;
 	left: auto;
 }
@@ -193,7 +193,6 @@ html,body{
 	width:250px;
 	height:250px;
 	padding-top:50px;
-	
 }
 .txtlogo{
 	padding: 3%;
@@ -204,13 +203,13 @@ html,body{
 }
 #video{
 	grid-area: video;
-	background: -webkit-linear-gradient(top,#0399cf,#289ec9, #289ec9, #0399cf);
+	background: #2980b9;
   display:flex;
   justify-content:center;
   align-items:center;
 }
 #video iframe{
-	margin: 30px 0px;
+	margin: 50px 0px;
 }
 /*======================================================*/
 
@@ -222,7 +221,7 @@ html,body{
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 20px 20px
+  padding: 20px 20px;
 }
 .footer__abajo .footer__arriba,
 .footer__abajo .footer__medio,
