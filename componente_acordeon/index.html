@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acordeon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css'>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="cabeza" v-for="x in dato">
+      <div class="row">
+        <div class="col-sm-3" style="font-size: 44px; text-align: center;background-color:rgb(102, 199, 238);">Datos
+        </div>
+        <div class="col-sm-5" style="font-size: 44px; text-align: center; background-color:rgb(158, 149, 238);">TÍTULO
+        </div>
+        <div class="col-sm-4" style="font-size: 22px; background-color:lavender;">Fecha: {{x.fecha_mod}} </div>
+        <div class="col-sm-4" style="font-size: 22px; background-color:lavender;">Hora: {{x.hora_mod}}</div>
+      </div>
+    </div>
+    <br>
+    <!-- partial:index.partial.html -->
+
+    <div class="content">
+      <div class="row">
+        <div class="col-sm-6">
+
+          <accordion id="accordion-example-1" :content="example1">
+
+          </accordion>
+        </div>
+
+        <div class="col-sm-6">
+
+          <accordion id="accordion-example-2" :content="example2">
+
+          </accordion>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.15/vue.js'></script>
+  <script src="./script.js"></script>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</html>
