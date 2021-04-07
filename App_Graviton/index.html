@@ -4,407 +4,181 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graviton</title>
+  <title>Graviton App</title>
 
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/formulario_login.css">
+  <link rel="stylesheet" href="css/preloader.css">
+  
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/header.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+  <link rel="stylesheet" href="css/banner.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mapa.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
 
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
-	<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="css/tiempo.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
   <style>
-    .map {
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			margin: auto;
-			width: 100%;
-			height: 100%;
-		}
-		.marker {
-			display: block;
-			border: none;
-			/*border-radius: 50%;*/
-			cursor: pointer;
-			padding: 0;
-		}
+    .mapa__d__l #app2 .map {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+    }
+    .mapa__d__l #app2 .marker {
+      display: block;
+      border: none;
+      background: red;
+      border-radius: 50%;
+      cursor: pointer;
+      padding: 0;
+    }
   </style>
-
   <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
-  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css">
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css"/>
 
   <div class="loader__page">
-		<div class="loader">
-			<img src="img/banner/logo_1.svg" alt="logo_uno" class="inicial__uno">
-			<img src="img/banner/logo_2.svg" alt="logo_dos" class="inicial__dos">
-			<img src="img/banner/logo_3.svg" alt="logo_tres" class="inicial__tres">
-		</div>
-	</div>
+    <img src="img/banner/logo_1.svg" alt="logo_uno" class="inicial__uno">
+    <img src="img/banner/logo_2.svg" alt="logo_dos" class="inicial__dos">
+    <img src="img/banner/logo_3.svg" alt="logo_tres" class="inicial__tres">
+  </div>
 
-  <!--logo animado-->
-  <div class="row" style="height: 650px;">
-		<div class="col-lg-6" id="loginlogo">
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Graviton</a>
+      </div>
 
-			<div class="loaderContainer">
-				<div class="loader__banner">
-					<img src="img/banner/logo_1.svg" alt="logo_uno" id="banner__logo1">
-					<img src="img/banner/logo_2.svg" alt="logo_dos" id="banner__logo2">
-					<img src="img/banner/logo_3.svg" alt="logo_tres" id="banner__logo3">
-				</div>
-			</div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#particles-js" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#mapa" class="nav__link">Mapa</a></li>
+          <li class="nav__item"><a href="#tiempo" class="nav__link">Tiempo</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </div>
 
-			<p class="txtlogo">
-				Bienvenido a mi Graviton
-			</p>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-			<!-- Boton modal Login-->
-			<div class=btn-container>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLogin"
-					id="btn-form" style="background:#0984e3">
-					Inicio Sesión
-				</button>
-			</div>
+  <section id="particles-js">
+    <div class="contenedor">
+      <div class="banner__logo">
+        <div class="banner__loader">
+          <img src="img/banner/logo_1.svg" alt="banner_uno" class="banner__uno">
+          <img src="img/banner/logo_2.svg" alt="banner_dos" class="banner__dos">
+          <img src="img/banner/logo_3.svg" alt="banner_tres" class="banner__tres">
+        </div>
+      </div>
 
-			<!-- Modal Login-->
-			<div class="modal fade" id=modalLogin tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-				aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-body">
-							<div class="container">
-								<div class="card"></div>
-								<div class="card">
-									<h1 class="title">Inicio Sesión</h1>
-									<form>
-										<div class="input-container">
-											<input type="#{type}" id="#{label}" required/>
-											<label for="#{label}">Nombre de usuario</label>
-											<div class="bar"></div>
-										</div>
-										<div class="input-container">
-											<input type="#{type}" id="#{label}" required/>
-											<label for="#{label}">Contraseña</label>
-											<div class="bar"></div>
-										</div>
-										<div class="button-container">
-											<button><span>Ingresar</span></button>
-										</div>
-										<div class="footer"><a href="#">¿Olvidaste tu contraseña?</a></div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+      <div class="banner__info">
+        <h1>Sistema Distribuido de monitoreo meteorologico aeronautico.</h1>
+        <button class="btn__ingresar">Iniciar Sesión</button>
+      </div>
 
-		</div>
-
-		<div class="col-lg-6" id="video">
-			<iframe width="500px" height="250px" src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
+      <div class="banner__video">
+        <iframe src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
-		</div>
+      </div>
+    </div>
+  </section>
 
-    <div class="contenedor__mapa_bl">
-      <div class="mapa__bl">
+  <section class="mapa__d__l" id="mapa">
+    <div id="app2">
+      <div class="mapa-d-l">
         <div id="comparison-container">
           <div id="before" class="map"></div>
           <div id="after" class="map"></div>
         </div>
       </div>
 
-      <div class="mapa__info1_bl">
-        <h2>NOTAM NUEVOS</h2>
-        <P>(NOTAMN 1</P>
-        <P>(NOTAMN 2</P>
-        <P>(NOTAMN 3</P>
-        <P>(NOTAMN 4</P>
-        <P>(NOTAMN 5</P>
-        <P>(NOTAMN 6</P>
-        <P>(NOTAMN 7</P>
-        <P>(NOTAMN 8</P>
-        <P>(NOTAMN 9</P>
-        <P>(NOTAMN 10</P>
-        <P>(NOTAMN 11</P>
-        <P>(NOTAMN 12</P>
-        <P>(NOTAMN 13</P>
-        <P>(NOTAMN 14</P>
-        <P>(NOTAMN 15</P>
-        <P>(NOTAMN 16</P>
-        <P>(NOTAMN 17</P>
-        <P>(NOTAMN 18</P>
-        <P>(NOTAMN 19</P>
-        <P>(NOTAMN 20</P>
-      </div>
+      <div class="info__uno">
+        <!-- <div class="info__uno" id="app"> -->
+        <div class="container">
+          <h1 v-model="titulo">{{titulo}}</h1>
+          <p>{{fecha}}</p>
 
-      <div class="mapa__info2_bl">
-        <h2>HISTORIAL DE NOTAMS</h2>
-        <P>(NOTAMR 21 NOTAMN 20</P>
-        <P>(NOTAMN 22 NOTAMR 21</P>
-        <P>(NOTAMN 23 NOTAMR 22</P>
-        <P>(NOTAMN 24 NOTAMR 23</P>
-        <P>(NOTAMN 25 NOTAMR 24</P>
-        <P>(NOTAMN 26 NOTAMR 25</P>
-        <P>(NOTAMN 27 NOTAMR 26</P>
-        <P>(NOTAMN 28 NOTAMR 27</P>
-        <P>(NOTAMN 29 NOTAMR 28</P>
-        <P>(NOTAMN 30 NOTAMR 29</P>
-        <P>(NOTAMN 31 NOTAMR 30</P>
-        <P>(NOTAMN 32 NOTAMR 31</P>
-        <P>(NOTAMN 33 NOTAMR 32</P>
-        <P>(NOTAMN 34 NOTAMR 33</P>
-        <P>(NOTAMN 35 NOTAMR 34</P>
-        <P>(NOTAMN 36 NOTAMR 35</P>
-        <P>(NOTAMN 37 NOTAMR 36</P>
-        <P>(NOTAMN 38 NOTAMR 37</P>
-        <P>(NOTAMN 39 NOTAMR 38</P>
-        <P>(NOTAMN 40 NOTAMR 39</P>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 10px;" v-for="todo of todos">
+              <h1 v-if="todo.lugar === titulo">{{todo.lugar}}</h1>
+              <h6 v-else-if="todo.lugar === ' '">No Hay Datos.</h6>
+            </li>
+          </ul>
+
+          <!-- <ul style="list-style: none">
+            <li style="margin-bottom: 10px" v-for="lenguaje of lenguajes">
+              <b-card-group deck class="mb-12" v-b-modal.modal-1 @click="modal">
+                <b-card text-variant="white" :header="[lenguaje.nombre]" class="text-center" style="background: #8e44ad;">
+                  <p class="card-text">{{lenguaje.longitude}}</p>
+                  <p class="card-text">{{lenguaje.latitude}}</p>
+                </b-card>
+              </b-card-group>
+            </li>
+            <div>
+              <b-modal id="modal-1" size="sm" centered>
+                <p class="my-4">{{titulo}}</p>
+              </b-modal>
+            </div>
+          </ul> -->
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="contenido__mapa__tiempo">
-      <iframe src="meteorologia_mapa/index.html"></iframe>
-    </div>
+  <section class="map__tiempo" id="tiempo">
+    <iframe src="tiempo/tiempo.html"></iframe>
+  </section>
 
-		<footer class="footer__abajo">
-			<div class="footer__arriba">
-				<div class="loader__footer">
-					<img src="img/footer/logo_1.svg" alt="svg_1" class="footer__svg__uno">
-					<img src="img/footer/logo_2.svg" alt="svg_2" class="footer__svg__dos">
-					<img src="img/footer/logo_3.svg" alt="svg_3" class="footer__svg__tres parpadeo__footer">
-				</div>
-			</div>
+  <section class="contacto" id="contacto">
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="img/footer/logo_1.svg" alt="footer__uno" class="footer__uno">
+        <img src="img/footer/logo_2.svg" alt="footer__dos" class="footer__dos">
+        <img src="img/footer/logo_3.svg" alt="footer__tres" class="footer__tres parpadeo__footer">
+      </div>
+      <h3 class="primera">Ifis <span>Nuclear</span></h3>
+      <p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+      <span class="footer__nombre">&copy; Inc</span>
+      <p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+      <p class="redes-sociales">
+        <a href="#" class="facebook"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="instagram"><i class='bx bxl-instagram' ></i></a>
+        <!-- <a href="#" class="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#" class="youtube"><i class='bx bxl-youtube' ></i></a>
+        <a href="#" class="telegram"><i class='bx bxl-telegram'></i></a> -->
+      </p>
+    </footer>
+  </section>
 
-			<div class="footer__medio">
-				<div class="links">
-					<p class="footer__links">
-						<a href="#">Inicio</a>
-						<a href="#">Boson</a>
-						<a href="#">Graviton</a>
-						<a href="#">Luczon</a>
-						<a href="#">Nuklear</a>
-						<a href="#">Upsilon</a>	
-					</p>
-				</div>
-			</div>
-
-			<div class="footer__final">
-				<h3 class="primera">Ifis <span>Nuclear</span></h3>
-				<p class="empresa">Sistema de Información de Vuelo por Internet.</p>
-				<span class="footer__nombre">&copy; Inc</span>
-				<p class="footer__empresa">2021 | IFIS NUKLEAR</p>
-			</div>
-		</footer>
-	</div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-
-  <script>
-    $(window).on('load', function () {
-      $(".loader__page").css({visibility:"hidden",opacity:"0"});    
-    });
-  </script>
-
-  <script>
-    function w3_open() {
-      document.getElementById("main").style.marginRight = "25%";
-      document.getElementById("mySidebar").style.width = "25%";
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("openNav").style.display = 'none';
-    }
-    function w3_close() {
-      document.getElementById("main").style.marginRight = "0%";
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("openNav").style.display = "inline-block";
-    }
-  </script>
-
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2FlbHQiLCJhIjoiY2tmNGx4MDY3MDBnNTJ5cDh2aHhjOTQyciJ9.juIQGQyyJdwT0cIfnbFA3Q';
-
-    posiciones = [
-      {'nombre': 'SLCB',    'longitude': '-66.177101' , 'latitude': '-17.421'},
-      {'nombre': 'SLGY',  'longitude': '-65.345802' , 'latitude': '-10.8216'},
-      {'nombre': 'SLLP',  'longitude': '-68.1922' , 'latitude':   '-16.5133'},
-      {'nombre': 'SLRQ',  'longitude': '-67.498001' , 'latitude': '-14.4275'},
-      {'nombre': 'SLET',  'longitude': '-63.171398' , 'latitude': '-17.811501'},
-      {'nombre': 'SLSU',  'longitude': '-65.149612' , 'latitude': '-19.246836'},
-      {'nombre': 'SLTR',  'longitude': '-64.917999' , 'latitude': '-14.8187'},
-      {'nombre': 'SLUY',  'longitude': '-66.830002' , 'latitude': '-20.459999'},
-      {'nombre': 'SLVR',  'longitude': '-63.1353' , 'latitude':   '-17.644699'},
-      {'nombre': 'SLHI',  'longitude': '-65.141502' , 'latitude': '-16.98975'},
-      {'nombre': 'SLRI',  'longitude': '-66.116669' , 'latitude': '-11.0105'},
-      {'nombre': 'SLRY',  'longitude': '-65.149612' , 'latitude': '-13.3333333333'},
-      {'nombre': 'SLPS',  'longitude': '-57.8191625744',  'latitude' : '-18.9748221244'},
-      {'nombre': 'SLYA',  'longitude': '-63.65166666666', 'latitude' : '-21.9608333'},
-      {'nombre': 'SLAG',  'longitude': '-63.9627777777',  'latitude' : '-19.8238889'},
-      {'nombre': 'SLAP',  'longitude': '-68.4119444444',  'latitude' : '-14.7355556'},
-      {'nombre': 'SLAS',  'longitude': '-63.15666666666', 'latitude' : '-15.9302778'},
-      {'nombre': 'SLBJ',  'longitude': '-64.3127777777',  'latitude' : '-22.7733333'},
-      {'nombre': 'SLCA',  'longitude': '-63.5274999999',  'latitude' : '-20.0072222'},
-      {'nombre': 'SLCP',  'longitude': '-62.028611111', 'latitude' : '-16.1383333'},
-      {'nombre': 'SLJE',  'longitude': '-60.7430555555',  'latitude' : '-17.8308333'},
-      {'nombre': 'SLJO',  'longitude': '-64.6744444444',  'latitude' : '-13.0658333'},
-      {'nombre': 'SLJV',  'longitude': '-62.4702777777',  'latitude' : '-16.2708333'},
-      {'nombre': 'SLMG',  'longitude': '-64.0619444444',  'latitude' : '-13.2586111'},
-      {'nombre': 'SLOR',  'longitude': '-67.075', 'latitude' : '-17.9555556'},
-      {'nombre': 'SLPO',  'longitude': '-65.7233333333',  'latitude' : '19.5422222'},
-      {'nombre': 'SLRA',  'longitude': '-64.6038888888',  'latitude' : '-13.2638889'},
-      {'nombre': 'SLRB',  'longitude': '-59.7658333333',  'latitude' : '-18.3277778'},
-      {'nombre': 'SLSA',  'longitude': '-65.4347222222',  'latitude' : '-13.7616667'},
-      {'nombre': 'SLSB',  'longitude': '-66.7386111111',  'latitude' : '-14.8577778'},
-      {'nombre': 'SLSI',  'longitude': '-60.96166666666', 'latitude' : '-16.3844444'},
-      {'nombre': 'SLSM',  'longitude': '-65.6338888888',  'latitude' : '-14.9655556'},
-      {'nombre': 'SLSR',  'longitude': '-66.7869444444',  'latitude' : '-14.0744444'},
-      {'nombre': 'SLTI',  'longitude': '-58.40194444444', 'latitude' : '-16.3391667'},
-      {'nombre': 'SLVG',  'longitude': '-64.0994444444',  'latitude' : '-18.4825'},
-      {'nombre': 'SLVM',  'longitude': '-63.4066666666',  'latitude' : '-21.2541667'},
-      {'nombre': 'SLTJ',  'longitude': '-64.701302',  'latitude' : '-21.5557'},
-      {'nombre': 'SLLF',  'longitude': '0', 'latitude' :  '0'},
-      {'nombre': 'SLCX',  'longitude': '-68.782898',  'latitude' : '-11.0404'}
-    ];
-
-    var beforeMap = new mapboxgl.Map({
-      container: 'before',
-      style: 'mapbox://styles/mapbox/light-v10',
-      center: [-68, -17],
-      zoom: 5
-    });
-
-    var lista_lugares=[]
-    for (var i = 0; i < posiciones.length; i++) {
-      var geojson = {
-        'type' :'FeatureCollection',
-        'features': [
-          {
-            'type': 'Feature',
-            'properties':{
-              'message' : posiciones[i].nombre,
-              'iconSize': [35,35]
-            },
-            'geometry':{
-              'type': 'Point',
-              'coordinates': [posiciones[i].longitude,posiciones[i].latitude]
-            }
-          }
-        ]
-      };
-      lista_lugares.push(geojson)
-    }
-
-    lista_lugares.forEach(function(geojson){
-      var el = document.createElement('div');
-      el.className = 'marker';
-      el.style.backgroundImage = 'url(img/mapbox-icon.png)';
-      /*'url(https://placekitten.com/g/' + geojson.features[0].properties.iconSize.join('/') +')';*/
-      el.style.width = geojson.features[0].properties.iconSize[0] + 'px';
-      el.style.height = geojson.features[0].properties.iconSize[1] + 'px';
-      el.style.backgroundSize = '100%';
-            
-      el.addEventListener('click', function () {
-        window.alert(geojson.features[0].properties.message);
-      });
-            
-      // add marker to map
-      new mapboxgl.Marker(el).setLngLat(geojson.features[0].geometry.coordinates).addTo(beforeMap);
-    });
+  <script src="js/header.js"></script>
   
-    posiciones2 = [
-      {'nombre': 'SLBJ',  'longitude': '-64.3127777777',  'latitude' : '-22.7733333'},
-      {'nombre': 'SLCA',  'longitude': '-63.5274999999',  'latitude' : '-20.0072222'},
-      {'nombre': 'SLCP',  'longitude': '-62.028611111', 'latitude' : '-16.1383333'},
-      {'nombre': 'SLJE',  'longitude': '-60.7430555555',  'latitude' : '-17.8308333'},
-      {'nombre': 'SLJO',  'longitude': '-64.6744444444',  'latitude' : '-13.0658333'},
-      {'nombre': 'SLJV',  'longitude': '-62.4702777777',  'latitude' : '-16.2708333'},
-      {'nombre': 'SLMG',  'longitude': '-64.0619444444',  'latitude' : '-13.2586111'},
-      {'nombre': 'SLOR',  'longitude': '-67.075', 'latitude' : '-17.9555556'},
-      {'nombre': 'SLPO',  'longitude': '-65.7233333333',  'latitude' : '19.5422222'},
-      {'nombre': 'SLRA',  'longitude': '-64.6038888888',  'latitude' : '-13.2638889'},
-      {'nombre': 'SLRB',  'longitude': '-59.7658333333',  'latitude' : '-18.3277778'},
-      {'nombre': 'SLSA',  'longitude': '-65.4347222222',  'latitude' : '-13.7616667'},
-      {'nombre': 'SLSB',  'longitude': '-66.7386111111',  'latitude' : '-14.8577778'},
-      {'nombre': 'SLSI',  'longitude': '-60.96166666666', 'latitude' : '-16.3844444'},
-      {'nombre': 'SLSM',  'longitude': '-65.6338888888',  'latitude' : '-14.9655556'},
-      {'nombre': 'SLSR',  'longitude': '-66.7869444444',  'latitude' : '-14.0744444'},
-      {'nombre': 'SLTI',  'longitude': '-58.40194444444', 'latitude' : '-16.3391667'},
-      {'nombre': 'SLVG',  'longitude': '-64.0994444444',  'latitude' : '-18.4825'},
-      {'nombre': 'SLVM',  'longitude': '-63.4066666666',  'latitude' : '-21.2541667'},
-      {'nombre': 'SLTJ',  'longitude': '-64.701302',  'latitude' : '-21.5557'},
-      {'nombre': 'SLLF',  'longitude': '0', 'latitude' :  '0'},
-      {'nombre': 'SLCX',  'longitude': '-68.782898',  'latitude' : '-11.0404'}
-    ];
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles.js"></script>
 
-    var afterMap = new mapboxgl.Map({
-      container: 'after',
-      style: 'mapbox://styles/mapbox/dark-v10',
-      center: [-68, -17],
-      zoom: 5
-    });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+  <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+  <script src="js/mapa.js"></script>
 
-    var lista_lugares2=[]
-    for (var i = 0; i < posiciones2.length; i++) {
-      var geojson = {
-        'type' :'FeatureCollection',
-        'features': [
-          {
-            'type': 'Feature',
-            'properties':{
-              'message' : posiciones2[i].nombre,
-              'iconSize': [35,35]
-            },
-            'geometry':{
-              'type': 'Point',
-              'coordinates': [posiciones2[i].longitude,posiciones2[i].latitude]
-            }
-          }
-        ]
-      };
-      lista_lugares2.push(geojson)
-    }
-
-    lista_lugares2.forEach(function(geojson){
-      var el = document.createElement('div');
-      el.className = 'marker';
-      el.style.backgroundImage = 'url(img/mapbox-icon.png)';
-      el.style.width = geojson.features[0].properties.iconSize[0] + 'px';
-      el.style.height = geojson.features[0].properties.iconSize[1] + 'px';
-      el.style.backgroundSize = '100%';
-            
-      el.addEventListener('click', function () {
-        window.alert(geojson.features[0].properties.message);
-      });
-            
-      // add marker to map
-      new mapboxgl.Marker(el).setLngLat(geojson.features[0].geometry.coordinates).addTo(afterMap);
-    });
-  
-    // A selector or reference to HTML element
-    var container = '#comparison-container';
-  
-    var map = new mapboxgl.Compare(beforeMap, afterMap, container, {
-    // Set this to enable comparing two maps by mouse movement:
-      //mousemove: true
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/preloader.js"></script>
 </body>
 </html>
