@@ -1,0 +1,81 @@
+.content__menu{
+  position: fixed;
+  width: 100px;
+  background: #161616;
+  top: 70px;
+  z-index: 2500;
+}
+.content__menu li{
+  list-style: none;
+  text-align: center;
+  padding: 3px;
+  color: #fff;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.content__menu li:hover{
+  transform: translateY(10px);
+  background: rgba(255,255,255,0.5);
+}
+.content__menu li > a{
+  text-decoration: none;
+  color: #fff;
+}
+.content__menu li span{
+  font-size: 35px;
+}
+.content__menu li h4{
+  font-weight: 100;
+  /* transform: translateY(18px) translateX(-100px);
+  transition: all 300ms; */
+  font-size: 15px;
+}
+.icon1{
+  color: #BA7404;
+}
+.icon2{
+  color: #1BBFB2;
+}
+.icon3{
+  color: #A319A4;
+}
+.icon4{
+  color: #760B0B;
+}
+.icon5{
+  color: #1B7E9F;
+}
+.icon6{
+  color: #6A26DF;
+}
+.icon7{
+  color: #6BF929;
+}
+.content-menu:hover .text1{
+  transform: translateX(0px);
+  transition: all 100ms;
+}
+.content-menu:hover .text2{
+  transform: translateX(0px);
+  transition: all 200ms;
+}
+.content-menu:hover .text3{
+  transform: translateX(0px);
+  transition: all 300ms;
+}
+.content-menu:hover .text4{
+  transform: translateX(0px);
+  transition: all 400ms;
+}
+.content-menu:hover .text5{
+  transform: translateX(0px);
+  transition: all 500ms;
+}
+.content-menu:hover .text6{
+  transform: translateX(0px);
+  transition: all 600ms;
+}
+.content-menu:hover .text7{
+  transform: translateX(0px);
+  transition: all 700ms;
+}

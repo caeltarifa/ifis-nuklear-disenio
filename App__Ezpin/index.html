@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezpin</title>
+
+  <link rel="stylesheet" href="css/app.css">
+
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/navbar.css">
+  
+  <link rel="stylesheet" href="css/menu_lateral.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="css/m_recibidos.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="css/m_nuevos.css">
+  
+  <link rel="stylesheet" href="css/contenido.css">
+
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  
+  <!-- navbar -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo" data-pushbar-target="pushbar-app"><i class='bx bxs-plane-take-off'></i> Ezpin</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="content__menu">
+    <li><a href="#m__recibidos"><span class='bx bxs-message-rounded-detail icon1'></span><h4 class="text1">Recibidos</h4></a></li>
+    <li><a href="#m__nuevos"><span class='bx bxs-message-rounded-add icon2'></span><h4 class="text2">Nuevos</h4></a></li>
+    <li><span class='bx bxs-contact icon3'></span><h4 class="text3">Directorio</h4></li>
+    <li><span class='bx bxs-message-rounded-check icon4'></span><h4 class="text4">Enviados</h4></li>
+    <li><span class='bx bxs-save icon5'></span><h4 class="text5">Guardados</h4></li>
+    <li><span class='bx bxs-trash icon6'></span><h4 class="text6">Eliminados</h4></li>
+    <li><a href="#contacto"><span class='bx bxs-info-circle icon7'></span><h4 class="text7">Contacto</h4></a></li>
+  </div>
+
+  <section class="m__recibidos" id="m__recibidos">
+    <h1 class="text-center">Mensajes Recibidos</h1>
+    <table id="m_recibidos" class="table table-striped" style="width: 100%;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Start date</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Tiger Nixon</td>
+          <td>System Architect</td>
+          <td>Edinburgh</td>
+          <td>61</td>
+          <td>2011/04/25</td>
+          <td>$320,800</td>
+        </tr>
+
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+
+        <tr>
+          <td>Tiger Nixon</td>
+          <td>System Architect</td>
+          <td>Edinburgh</td>
+          <td>61</td>
+          <td>2011/04/25</td>
+          <td>$320,800</td>
+        </tr>
+
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+
+        <tr>
+          <td>Tiger Nixon</td>
+          <td>System Architect</td>
+          <td>Edinburgh</td>
+          <td>61</td>
+          <td>2011/04/25</td>
+          <td>$320,800</td>
+        </tr>
+
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+        <tr>
+          <td>Tiger Nixon2</td>
+          <td>System Architect2</td>
+          <td>Edinburgh2</td>
+          <td>612</td>
+          <td>2011/04/22</td>
+          <td>$320,8002</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="m__nuevos" id="m__nuevos">
+    <div id="app">
+      <h1 class="text-center titulo">Nuevo Mensaje</h1>
+      <b-row class="my-1">
+        <b-col sm="2">
+          <label for="origen" class="titulo__nuevo">Origen:</label>
+        </b-col>
+        <b-col sm="4">
+          <b-form-input id="origen" placeholder="Origen..."></b-form-input>
+        </b-col>
+
+        <b-col sm="2">
+          <label for="prioridad" class="titulo__nuevo">Prioridad:</label>
+        </b-col>
+        <b-col sm="4">
+          <b-form-input id="prioridad" placeholder="Prioridad..."></b-form-input>
+        </b-col>
+      </b-row>
+
+      <b-row class="my-1">
+        <b-col sm="2">
+          <label for="asunto" class="titulo__nuevo">Asunto:</label>
+        </b-col>
+        <b-col sm="10">
+          <b-form-input id="asunto" placeholder="Asunto..."></b-form-input>
+        </b-col>
+      </b-row>
+
+      <b-row class="my-1">
+        <b-col sm=2>
+          <label for="input-small" class="titulo__nuevo">Grupo Destino:</label>
+        </b-col>
+        <b-col sm="10">
+          <div style="width: 100%">
+            <multiselect 
+              v-model="value" 
+              :height="100"
+              :options="options" 
+              :multiple="true" 
+              :taggable="true"
+              :close-on-select="false" 
+              :clear-on-select="false" 
+              :preserve-search="true" 
+              tag-placeholder="Add this as new tag" 
+              placeholder="Seleccionar..."
+              @tag="addTag"
+              label="title" 
+              track-by="title" 
+              :preselect-first="false"
+            >
+              <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single" v-if="values.length &amp;&amp; !isOpen">{{ values.length }} options selected</span></template>
+            </multiselect>
+            <!-- <pre class="language-json"><code>{{ value }}</code></pre> -->
+          </div>
+        </b-col>
+      </b-row>
+
+      <b-row class="my-1">
+        <b-col sm=2>
+          <label for="input-small" class="titulo__nuevo">Dependencia Destino:</label>
+        </b-col>
+        <b-col sm="10">
+          <div style="width: 100%">
+            <multiselect 
+              v-model="value" 
+              :height="100"
+              :options="options" 
+              :multiple="true" 
+              :taggable="true"
+              :close-on-select="false" 
+              :clear-on-select="false" 
+              :preserve-search="true" 
+              tag-placeholder="Add this as new tag" 
+              placeholder="Seleccionar..."
+              @tag="addTag"
+              label="title" 
+              track-by="title" 
+              :preselect-first="false"
+            >
+              <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single" v-if="values.length &amp;&amp; !isOpen">{{ values.length }} options selected</span></template>
+            </multiselect>
+            <!-- <pre class="language-json"><code>{{ value }}</code></pre> -->
+          </div>
+        </b-col>
+      </b-row>
+
+      <b-row class="my-1">
+        <b-col sm="12">
+          <b-form-textarea id="textarea-rows" placeholder="Mensaje..." rows="8"></b-form-textarea>
+        </b-col>
+      </b-row>
+
+      <div class="text-right">
+        <b-button variant="primary" style="padding: 10px 40px; letter-spacing: 4px;">Guardar</b-button>
+        <b-button variant="success" style="padding: 10px 40px; letter-spacing: 4px;">Enviar</b-button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="img/footer/logo_1.svg" alt="footer__uno" class="footer__uno">
+        <img src="img/footer/logo_2.svg" alt="footer__dos" class="footer__dos">
+      </div>
+
+      <h3 class="primera">Ifis <span>Nuclear</span></h3>
+      <p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+
+      <p class="redes-sociales">
+        <a href="#" class="facebook"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="instagram"><i class='bx bxl-instagram' ></i></a>
+      </p>
+
+      <span class="footer__nombre">&copy; Inc</span>
+      <p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+    </footer>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- <script src="js/navbar.js"></script> -->
+
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
+  <script src="js/m_recibidos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.js"></script> 
+  <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+  <script src="js/m_nuevos.js"></script>
+
+</body>
+</html>

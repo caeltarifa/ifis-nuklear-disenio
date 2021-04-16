@@ -1,0 +1,13 @@
+.m__recibidos{
+  width: 100%;
+  height: 100%;
+  background: #8e6b29;
+  color: #fff;
+  padding: 70px 20px 0 110px;
+}
+.m__recibidos table thead th{
+  color: #fff;
+}
+.m__recibidos table tbody td{
+  color: #fff;
+}
