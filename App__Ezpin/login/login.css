@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.bg-img
+{
+  background: url('login2.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after
+{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.bg-img .content
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.bg-img .content header
+{
+  color: #fff;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Open Sans',sans-serif;
+  letter-spacing: 2px;
+}
+.bg-img .content .field
+{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.bg-img .content .field span
+{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.bg-img .content .field input
+{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Open Sans',sans-serif;
+  text-transform: uppercase;
+}
+.bg-img .content .space
+{
+  margin-top: 16px;
+}
+.bg-img .content .field .show
+{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Open Sans',sans-serif;
+}
+.bg-img .content .field .pass-key:valid ~ .show
+{
+  display: block;
+}
+.bg-img .content .pass
+{
+  text-align: left;
+  margin: 10px 0;
+}
+.bg-img .content .pass a
+{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans',sans-serif;
+}
+.bg-img .content .pass a:hover
+{
+  color: #cacaca;
+}
+.bg-img .content .field input[type="submit"]
+{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Open Sans',sans-serif;
+}
+.bg-img .content .field input[type="submit"]:hover
+{
+  background: #2691d9;
+  border: 3px dashed #fff;
+}
+.bg-img .content .signup
+{
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Open Sans',sans-serif;
+  margin-top: 20px;
+}
+.bg-img .content .signup a
+{
+  color: #b2bec3;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.bg-img .content .signup a:hover
+{
+  color: #fff;
+}
+.bg-img .content{
+  border: 2px solid #fff;
+}
