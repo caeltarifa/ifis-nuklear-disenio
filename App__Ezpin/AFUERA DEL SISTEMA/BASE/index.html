@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina Principal</title>
+
+	<!-- ----- ----- Estilos Generales ----- ----- -->
+	<link rel="stylesheet" href="css/estilos.css">
+	
+	<!-- ----- ----- Iconos BoxIcons ----- ----- -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ----- ----- Estilo NavBar ----- ----- -->
+	<link rel="stylesheet" href="css/navbar.css">
+
+	<!-- ----- ----- Estilo Menu SideBar ----- ----- -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+
+	<!-- ----- ----- Estilo Menu Sidebar ----- ----- -->
+	<link rel="stylesheet" href="css/pushbar.css">
+
+	<!-- ----- ----- Estilo Contacto ----- ----- -->
+	<link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+	<!-- ----- ----- Pre - Loader ----- ----- -->
+	<div class="preloader">
+		<img src="img/preloader/logo_1.svg" class="loader__uno">
+		<img src="img/preloader/logo_2.svg" class="loader__dos">
+		<div class="loader__redondo"></div>
+		<div class="loader">
+			<span><img src="img/preloader/logo_3.svg" class="loader__tres"></span>
+			<span><img src="img/preloader/logo_4.svg" class="loader__tres"></span>
+			<span><img src="img/preloader/logo_5.svg" class="loader__tres"></span>
+		</div>
+	</div>
+
+	<!-- ----- ----- NavBar ----- ----- -->
+	<header class="l-header">
+		<div class="logos">
+			<div class="header">
+				<div class="header__assana" style="display: flex; justify-content: space-between; align-items: center;">
+					<img src="img/navbar/LOGO_EPB.png" class="logo__epb">
+					<a href="#" class="nav__logo">Ezpin</a>
+					<a href="#" class="apps__ifis nav__logo" data-pushbar-target="pushbar-app"><i class="fas fa-th"></i></a>
+				</div>
+				
+
+				<div class="optionsBar" style="display: flex; align-items: center; justify-content: space-between;">
+					<nav class="nav bd-grid">			
+						<div class="nav__menu" id="nav-menu">
+							<ul class="nav__list">
+								<li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+								<li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+							</ul>
+						</div>
+			
+						<div class="nav__toggle" id="nav-toggle">
+							<i class="bx bx-menu"></i>
+						</div>
+					</nav>
+					<img src="img/navbar/LOGO_AASANA.png" class="logo__aasana">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ----- ----- Menu Sidebar ----- ----- -->
+	<div data-pushbar-id="pushbar-app" data-pushbar-direction="left" class="pushbar pushbar-app">
+		<div class="contenedor">
+			<div class="btn-cerrar izquierda">
+				<button data-pushbar-close><i class="fas fa-times"></i></button>
+			</div>
+
+			<p class="titulo">IFIS NUKLEAR</p>
+
+			<a href="#">
+				<div class="item">
+					<img src="img/sidebar/2.png">
+					<div class="textos">
+						<p class="nombre-item">App Boson</p>
+						<p>Recursor Humanos</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="item">
+					<img src="img/sidebar/5.png">
+					<div class="textos">
+						<p class="nombre-item">App Ezpin</p>
+						<p>Mensajeria</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="item">
+					<img src="img/sidebar/1.png">
+					<div class="textos">
+						<p class="nombre-item">App Graviton</p>
+						<p>Metereologia</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="item">
+					<img src="img/sidebar/3.png">
+					<div class="textos">
+						<p class="nombre-item">App Luczon</p>
+						<p>Plan de Vuelo</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="item">
+					<img src="img/sidebar/4.png">
+					<div class="textos">
+						<p class="nombre-item">App Upsilon</p>
+						<p>Información</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+	<section id="inicio" style="width: 100%; height: 100%; background: #ffab48; padding: 70px 0 0 10px; color:#fff;">
+		<h1>Contenido</h1>
+	</section>
+	
+
+	<section id="contact" class="contacto">
+		<footer class="footer">
+			<div class="footer__logo">
+				<img src="img/footer/logo_1.svg" class="footer__uno">
+				<img src="img/footer/logo_2.svg" class="footer__dos">
+				<img src="img/footer/logo_3.svg" class="footer__tres">
+			</div>
+
+			<h3 class="primera">Ifis <span>Nuklear</span></h3>
+			<p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+
+			<span class="footer__nombre">&copy; Inc</span>
+			<p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+		</footer>
+	</section>
+
+	<!-- ----- ----- Libreria JQuery ----- ----- -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- ----- ----- Script Icono ----- ----- -->
+	<script src="https://kit.fontawesome.com/1ac5dcfffc.js" crossorigin="anonymous"></script>
+
+	<!-- ----- ----- Script Pre - Loader ----- ----- -->
+	<script src="js/script.js"></script>
+
+	<!-- ----- ----- Script Menu Sidebar ----- ----- -->
+	<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+
+	<!-- ----- ----- Script Sidebar ----- ----- -->
+	<script src="js/pushbar.js"></script>
+
+	<!-- ----- ----- Script NavBar ----- ----- -->
+	<script src="js/navbar.js"></script>
+</body>
+</html>

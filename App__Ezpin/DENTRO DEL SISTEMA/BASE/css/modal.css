@@ -1,0 +1,79 @@
+/* ------------------------------ */
+/* Modal */
+/* ------------------------------ */
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__all{
+  display: none;
+  z-index: 100;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.852);
+}
+.cont-modal-m-recibido{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 35%;
+  height: 43%;
+  box-shadow: 0 0 26px 0 rgba(255,255,255,1);
+  animation-name: modal;
+  animation-duration: 2s;
+  border-radius: 25px;
+}
+@keyframes modal{
+  from{top: -330px; opacity: 0;}
+  to{top: 0; opacity: 1;}
+}
+.close{
+  color: #cacaca;
+  font-size: 30px;
+  font-weight: bold;
+}
+.close:hover{
+  color: #7f8c8d;
+  text-decoration: none;
+  font-weight: bold;
+}
+.modal-header{
+  padding: 8px 16px;
+  height: 50px;
+  background: #34495e;
+  color: #f2f2f2;
+}
+.modal-body{
+  padding: 20px 16px;
+  text-align: center;
+}
+.modal-body p{
+  font-size: 25px;
+}
+.tarjeta-titulo{
+  animation: tarjeta__titulo 4s infinite linear;
+  font-size: 20px;
+}
+.back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tarjeta-titulo{
+  animation: tarjeta__titulo 4s infinite linear;
+  font-size: 20px;
+  color: #eb4d4b;
+  display: none;
+}
+@keyframes tarjeta__titulo{
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}

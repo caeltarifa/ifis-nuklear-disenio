@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root
+{
+   --contacto_color: #3988b2;
+}
+.contacto
+{
+   width: 100%;
+   height: 100%;
+   background: var(--contacto_color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-family: 'Open Sans',sans-serif;
+}
+.footer
+{
+   width: 100%;
+}
+.footer .footer__logo
+{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footer .footer__logo .footer__uno,
+.footer .footer__logo .footer__dos,
+.footer .footer__logo .footer__tres
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   margin: auto;
+}
+.footer .footer__logo .footer__uno
+{
+   width: 100px;
+   animation: footer__uno 4s infinite linear;
+}
+.footer .footer__logo .footer__dos
+{
+   width: 210px;
+   z-index: 20;
+   animation: footer__dos 6s infinite linear;
+}
+.footer .footer__logo .footer__tres
+{
+   width: 400px;
+   top: 100px;
+   animation: footer__tres 10s infinite linear;
+}
+@keyframes footer__uno
+{
+   from
+   {
+      transform: rotate(0deg);
+   }
+   to
+   {
+      transform:rotate(359deg);
+   }
+}
+@keyframes footer__dos
+{
+   from
+   {
+      transform: rotate(359deg);
+   }
+   to
+   {
+      transform:rotate(0deg);
+   }
+}
+@keyframes footer__tres
+{
+   0%{opacity: 1;}
+   10%{opacity: 0.8;}
+   20%{opacity: 0.6;}
+   30%{opacity: 0.4;}
+   40%{opacity: 0.2;}
+   50%{opacity: 0;}
+   60%{opacity: 0.2;}
+   70%{opacity: 0.4;}
+   80%{opacity: 0.6;}
+   90%{opacity: 0.8;}
+   100%{opacity: 1;}
+}
+.footer .primera
+{
+   color: #fff;
+   letter-spacing: 10px;
+   margin: 0;
+   margin-bottom: 10px;
+   font-size: 40px;
+   font-weight: bold;
+}
+.footer .primera > span
+{
+   color: #cacaca;
+}
+.footer .empresa
+{
+   color: #fff;
+   font-size: 15px;
+   font-weight: normal;
+   margin-bottom: 0;
+   letter-spacing: 5px;
+}
+.footer .footer__nombre
+{
+   color: #fff;
+   font-size: 27px;
+   font-weight: bold;
+}
+.footer .footer__empresa{
+   color: #cacaca;
+   font-size: 20px;
+   font-weight: 900;
+   margin-top: 10px;
+   letter-spacing: 7px;
+}

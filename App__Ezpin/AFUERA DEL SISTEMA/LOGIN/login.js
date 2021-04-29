@@ -5,11 +5,11 @@ $(document).ready(function(){
   showBtn.addEventListener('click', function(){
     if(pass_field.type === "password"){
       pass_field.type = "text";
-      showBtn.textContent = "HIDE";
+      showBtn.textContent = "OCULTAR";
       showBtn.style.color = "#3498db";
     }else{
       pass_field.type = "password";
-      showBtn.textContent = "SHOW";
+      showBtn.textContent = "MOSTRAR";
       showBtn.style.color = "#222";
     }
   });

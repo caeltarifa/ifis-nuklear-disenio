@@ -1,0 +1,131 @@
+/* -------------------- */
+/* Estilos Generales */
+/* -------------------- */
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body,html
+{
+	height: 100%;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+}
+:root{
+	--loader_fondo: #0f4c81;
+	--anillo_men: #1eb2a6;
+}
+/* ----- ----- Fondo Preloader ----- ----- */
+.preloader
+{
+	position: fixed;
+	z-index: 25000;
+	background: var(--loader_fondo);
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.preloader .loader__uno,
+.preloader .loader__dos,
+.preloader .loader__tres,
+.preloader .loader__redondo
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.preloader .loader__uno
+{
+	width: 110px;
+	animation: loader__uno 4s infinite linear;
+}
+.preloader .loader__dos
+{
+	width: 230px;
+	animation: loader__dos 6s infinite linear;
+}
+.preloader .loader__tres
+{
+	width: 40px;
+	top: 35%;
+}
+.preloader .loader
+{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.preloader .loader::before,
+.preloader .loader::after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+}
+.preloader .loader::before
+{
+	width: inherit;
+	height: 0.2em;
+}
+.preloader .loader::after
+{
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	border: var(--anillo_men) 5px dashed;
+	border-radius: 50%;
+	left:0;
+	right: 0;
+	margin: auto;
+}
+.preloader .loader span{
+	position: absolute;
+	bottom: 20px;
+	left: -10%;
+	animation: 4s linear infinite;
+	transform-origin: 10% -8em;
+	animation-name: run, rotating;
+}
+.preloader .loader span:nth-child(2)
+{animation-delay: 0.40s;}
+.preloader .loader span:nth-child(3)
+{animation-delay: 0.80s;}
+@keyframes loader__uno{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(359deg);
+	}
+}
+@keyframes loader__dos{
+	from{
+		transform: rotate(359deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+@keyframes run
+{
+	0%{left: -10%;}
+	10%,60%{left: calc((100%) / 2);}
+	70%,100%{left: 100%;}
+}
+@keyframes rotating
+{
+	0%,10%{transform: rotate(0deg);}
+	60%,100%{transform: rotate(-1turn);}
+}

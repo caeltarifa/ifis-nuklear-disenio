@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root
+{
+  --fondo_banner: #ffab48;
+}
+/* ------------------------------ */
+/* Estilos Generales */
+/* ------------------------------ */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html
+{
+  height: 100%;
+}
+/* ------------------------------ */
+/* Contenido Banner */
+/* ------------------------------ */
+.banner
+{
+  width: 100%;
+  height: 100%;
+  background: var(--fondo_banner);
+  position: fixed;
+}
+.banner #particles-js
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* ----- -----  Contenido  ----- ----- */
+.banner .contenido
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas: "logo video"
+  "logo video"
+  "info video";
+}
+/* ----- -----  Contenido Logo - Banner  ----- ----- */
+.banner .contenido .logo
+{
+  color: #fff;
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .contenido .logo .logo__banner
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.banner .contenido .logo .logo__banner .banner__uno,
+.banner .contenido .logo .logo__banner .banner__dos,
+.banner .contenido .logo .logo__banner .banner__tres
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.banner .contenido .logo .logo__banner .banner__uno
+{
+  width: 110px;
+  animation: banner__uno 4s infinite linear;
+}
+.banner .contenido .logo .logo__banner .banner__dos
+{
+  width: 230px;
+  animation: banner__dos 7s infinite linear;
+}
+.banner .contenido .logo .logo__banner .banner__tres
+{
+  width: 40px;
+  top: 65%;
+}
+.banner .contenido .logo .logo__banner .loader__banner
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner .contenido .logo .logo__banner .loader__banner::before
+.banner .contenido .logo .logo__banner .loader__banner::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+.banner .contenido .logo .logo__banner .loader__banner::before
+{
+  width: inherit;
+  height: 0.2em;
+}
+.banner .contenido .logo .logo__banner .loader__banner::after
+{
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.banner .contenido .logo .logo__banner .loader__banner span
+{
+  position: absolute;
+  bottom: 70px;
+  left: -10%;
+  animation: 5s linear infinite;
+  transform-origin: 10% -9em;
+  animation-name: run__banner, rotating__banner;
+}
+.banner .contenido .logo .logo__banner .loader__banner span:nth-child(2)
+{
+  animation-delay: 0.40s;
+}
+.banner .contenido .logo .logo__banner .loader__banner span:nth-child(3)
+{
+  animation-delay: 0.80s;
+}
+@keyframes banner__uno
+{
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to
+  {
+    transform:  rotate(359deg);
+  }
+}
+@keyframes banner__dos
+{
+  from
+  {
+    transform: rotate(359deg);
+  }
+  to
+  {
+    transform:  rotate(0deg);
+  }
+}
+@keyframes run__banner
+{
+	0%{left: -10%;}
+	10%,60%{left: calc((100%) / 2);}
+	70%,100%{left: 100%;}
+}
+@keyframes rotating__banner
+{
+	0%,10%{transform: rotate(0deg);}
+	60%,100%{transform: rotate(-1turn);}
+}
+/* ----- -----  Contenido Logo - Informacion  ----- ----- */
+.banner .contenido .info
+{
+  color: #fff;
+  grid-area: info;
+  text-align: center;
+}
+.banner .contenido .info .tit__banner
+{
+  font-size: 25px;
+  text-transform: uppercase; 
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+.banner .contenido .info .inf__banner
+{
+  font-size: 17px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+.banner .contenido .info .btn__iniciar__login
+{
+  text-decoration: none;
+  border: 4px solid #3988b2;
+  padding: 20px 40px;
+  color: #fff;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  
+}
+.banner .contenido .info .btn__iniciar__login:hover{
+  background: #3988b2;
+}
+/* ----- -----  Contenido Logo - Video  ----- ----- */
+.banner .contenido .video{
+  color: #fff;
+  grid-area: video;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .contenido .video iframe
+{
+  width: 80%;
+  height: 50%;
+}

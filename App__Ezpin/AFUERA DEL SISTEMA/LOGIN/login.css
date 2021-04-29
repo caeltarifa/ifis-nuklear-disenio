@@ -8,10 +8,7 @@
 }
 .bg-img
 {
-  background: url('login2.jpg');
   height: 100vh;
-  background-size: cover;
-  background-position: center;
 }
 .bg-img:after
 {
@@ -21,8 +18,112 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
 }
+/* ------------------------------ */
+/* Fondo animado */
+/* ------------------------------ */
+.img__mov
+{
+  height: 100%;
+  background: #ffab48;
+}
+.bg-img .img__mov .login__uno,
+.bg-img .img__mov .login__dos,
+.bg-img .img__mov .login__tres
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bg-img .img__mov .login__uno
+{
+  width: 110px;
+  animation: login__uno 4s infinite linear;
+}
+.bg-img .img__mov .login__dos
+{
+  width: 230px;
+  animation: login__dos 6s infinite linear;
+}
+.bg-img .img__mov .login__tres
+{
+  width: 40px;
+  top: 35%;
+}
+.bg-img .img__mov .img__mov__loader
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  outline: 1px solid red;
+}
+.bg-img .img__mov .img__mov__loader::before,
+.bg-img .img__mov .img__mov__loader::after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+}
+.bg-img .img__mov .img__mov__loader::before
+{
+  width: inherit;
+  height: 0.2em;
+}
+.bg-img .img__mov .img__mov__loader::after
+{
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  border: #1eb2a6 5px dashed;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bg-img .img__mov span
+{
+  position: absolute;
+  bottom: 30%;
+  left: -10%;
+  animation: 4s linear infinite;
+  transform-origin: 10% -8em;
+  animation-name: emp_login, rotar_login;
+}
+.bg-img .img__mov span:nth-child(2)
+{animation-delay: 0.40s;}
+.bg-img .img__mov span:nth-child(3)
+{animation-delay: 0.80s;}
+@keyframes login__uno
+{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(359deg);}
+}
+@keyframes login__dos
+{
+  from{transform: rotate(359deg);}
+  to{transform: rotate(0deg);}
+}
+@keyframes emp_login
+{
+  0%{left: -10%;}
+	10%,60%{left: calc((100%) / 2);}
+	70%,100%{left: 100%;}
+}
+@keyframes rotar_login
+{
+  0%,10%{transform: rotate(0deg);}
+	60%,100%{transform: rotate(-1turn);}
+}
+/* ------------------------------ */
+/* Contenido Login */
+/* ------------------------------ */
 .bg-img .content
 {
   position: absolute;
@@ -34,7 +135,7 @@
   width: 370px;
   transform: translate(-50%,-50%);
   background: rgba(255,255,255,0.04);
-  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 10px rgba(255,255,255,0.75);
 }
 .bg-img .content header
 {
@@ -78,10 +179,11 @@
 .bg-img .content .field .show
 {
   position: absolute;
-  right: 13px;
+  right: 30px;
+  width: 30px;
   font-size: 13px;
   font-weight: 700;
-  color: #222;
+  color: #aaa;
   display: none;
   cursor: pointer;
   font-family: 'Open Sans',sans-serif;
@@ -137,7 +239,4 @@
 .bg-img .content .signup a:hover
 {
   color: #fff;
-}
-.bg-img .content{
-  border: 2px solid #fff;
 }

@@ -1,0 +1,40 @@
+:root{
+   --lateral_color: #3988b2;
+   --lateral_hover: #37c177;
+}
+.menu__lateral{
+   position: fixed;
+   width: 100px;
+   background: var(--lateral_color);
+   top: 66px;
+   z-index: 200;
+}
+.menu__lateral a{
+   text-decoration: none;
+}
+.menu__lateral a:hover{
+   text-decoration: none;
+   color: #fff;
+}
+.menu__lateral li{
+   list-style: none;
+   text-align: center;
+   padding: 3px;
+   color: #fff;
+   transition: all 300ms;
+   cursor: pointer;
+}
+.menu__lateral li:hover{
+   transform: translateX(10px);
+   background: var(--lateral_hover);
+}
+.menu__lateral li span{
+   font-size: 35px;
+}
+.menu__lateral li h4{
+   font-size: 15px;
+   font-weight: 700;
+}
+.icon1{
+   color: #fff;
+}
