@@ -1,0 +1,53 @@
+:root
+{
+  --fondo_preloader: #fff;
+}
+.preloader
+{
+  position: fixed;
+  z-index: 25000;
+  background: var(--fondo_preloader);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .loader__uno,
+.preloader .loader__dos,
+.preloader .loader__tres
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.preloader .loader__uno
+{
+  width: 120px;
+  animation: preloader__der 5s infinite linear;
+}
+.preloader .loader__dos
+{
+  width: 220px;
+  animation: preloader__izq 7s infinite linear;
+}
+.preloader .loader__tres
+{
+  width: 350px;
+  animation: preloader__der 200s infinite linear;
+}
+@keyframes preloader__der
+{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(359deg);}
+}
+@keyframes preloader__izq
+{
+  from{transform: rotate(359deg);}
+  to{transform: rotate(0deg);}
+}
