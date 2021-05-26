@@ -41,7 +41,6 @@ header .bd-grid{
 .l-header{
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid #fff;
   top: 0;
   left: 0;
   z-index: 100;
@@ -95,6 +94,10 @@ header .active::after{
   left: 0;
   top: 1.5rem;
   background-color: #5361FF;
+}
+header .logo__aasana{
+  width: 100px;
+  height: 50px;
 }
 @media screen and (min-width: 768px){
   body{

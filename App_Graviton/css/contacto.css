@@ -8,82 +8,10 @@
   text-align: center;
 }
 .footer{
-  width: 40%;
+  width: 100%;
 }
 .footer h2{
   font-family: 'Oswald',sans-serif;
-}
-.footer .redes-sociales{
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  font-size: 35px;
-}
-.footer .redes-sociales a{
-  display: flex;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  color: #30313a;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  margin: 0 20px;
-}
-.footer .facebook i{
-  color: #3b5998;
-}
-.footer .twitter i{
-  color: #1da1f2;
-}
-.footer .instagram i{
-  color: #c13584;
-}
-.footer .whatsapp i{
-  color: #00bb2d;
-}
-.footer .youtube i{
-  color: #c4302b;
-}
-.footer .telegram i{
-  color: #0088cc;
-}
-.footer .facebook:hover{
-  background: #3b5998;
-}
-.footer .twitter:hover{
-  background: #1da1f2;
-}
-.footer .instagram:hover{
-  background: #c13584;
-}
-.footer .whatsapp:hover{
-  background: #00bb2d;
-}
-.footer .youtube:hover{
-  background: #c4302b;
-}
-.footer .telegram:hover{
-  background: #0088cc;
-}
-.footer .facebook:hover i{
-  color: #fff;
-}
-.footer .twitter:hover i{
-  color: #fff;
-}
-.footer .instagram:hover i{
-  color: #fff;
-}
-.footer .whatsapp:hover i{
-  color: #fff;
-}
-.footer .youtube:hover i{
-  color: #fff;
-}
-.footer .telegram:hover i{
-  color: #fff;
 }
 .footer .footer__logo{
   position: relative;
@@ -182,4 +110,20 @@
   font-size: 20px;
   font-weight: 900;
   margin-top: 10px;
+}
+.footer .logo__epb{
+  width: 200px;
+  height: 100px;
+}
+@media screen and (max-width: 900px){
+  .footer .footer__logo .footer__uno{
+    width: 70px;
+  }
+  .footer .footer__logo .footer__dos{
+    width: 150px;
+  }
+  .footer .footer__logo .footer__tres{
+    width: 300px;
+    top: 80px;
+  }
 }

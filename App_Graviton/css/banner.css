@@ -139,3 +139,14 @@ canvas{
   width: 90%;
   height: 350px;
 }
+@media screen and (max-width: 900px){
+  #particles-js{
+    height: 140vh;
+  }
+  #particles-js .contenedor{
+    grid-template-areas: "logo logo"
+    "logo logo"
+    "info info"
+    "video video";
+  }
+}

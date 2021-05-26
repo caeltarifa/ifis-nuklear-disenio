@@ -45,6 +45,12 @@
   background-color: red;
   width: 5px;
 }
-.mapboxgl-ctrl-bottom-left,.mapboxgl-ctrl-bottom-right{
-  display: none;
+@media screen and (max-width: 900px){
+  .mapa__d__l #app2{
+    grid-template-areas:
+    "mapa mapa mapa"
+    "mapa mapa mapa"
+    "info_1 info_1 info_1"
+    "info_1 info_1 info_1";
+  }
 }
