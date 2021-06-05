@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upsilon App</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+  <link rel="stylesheet" href="css/tiempo.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css'>
+  <link rel="stylesheet" href="css/mapa.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/acordeon.css">
+  <link rel="stylesheet" href="css/grafico.css">
+</head>
+<body>
+  <div class="loader__page">
+    <img src="img/preloader/logo_1.svg" alt="logo_uno" class="inicial__uno">
+    <img src="img/preloader/logo_2.svg" alt="logo_dos" class="inicial__dos">
+    <img src="img/preloader/logo_3.svg" alt="logo_tres" class="inicial__tres">
+  </div>
+  <header class="l-header">
+    <nav class="nav bd-grid" style="display: flex; align-items: center; justify-content: space-between;">
+      <div>
+        <a href="#" class="nav__logo">Upsilon</a>
+        <a href="#" class="nav__logo" data-pushbar-target="pushbar-app"><i class='bx bxs-category'></i></a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#particles-js" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#segundo" class="nav__link">Acordeon</a></li>
+          <li class="nav__item"><a href="#tercero" class="nav__link">Mapa</a></li>
+          <li class="nav__item"><a href="#cuarto" class="nav__link">Graficos</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </div>
+      <img src="img/footer/LOGO_AASANA.png" class="logo__aasana">
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+  <div data-pushbar-id="pushbar-app" data-pushbar-direction="left" class="pushbar pushbar-app">
+    <div class="contenedor">
+      <div class="btn-cerrar izquierda">
+        <button data-pushbar-close><i class='bx bx-x'></i></button>
+      </div>
+      <p class="titulo">Ifis Nuklear</p>
+      <a href="#">
+        <div class="item">
+          <img src="img/sidebar/5.png">
+          <div class="textos">
+            <p class="nombre-item">App Ezpin</p>
+            <p>Mensajeria Aeronautica</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <img src="img/sidebar/1.png">
+          <div class="textos">
+            <p class="nombre-item">App Graviton</p>
+            <p>Sistema Metereologica</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <img src="img/sidebar/3.png">
+          <div class="textos">
+            <p class="nombre-item">App Luczon</p>
+            <p>Plan de Vuelo</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <img src="img/sidebar/4.png">
+          <div class="textos">
+            <p class="nombre-item">App Upsilon</p>
+            <p>Sistema Información</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <section id="particles-js">
+    <div class="contenedor">
+      <div class="banner__logo">
+        <div class="banner__loader">
+          <img src="img/banner/logo_1.svg" alt="banner_uno" class="banner__uno">
+          <img src="img/banner/logo_2.svg" alt="banner_dos" class="banner__dos">
+          <img src="img/banner/logo_3.svg" alt="banner_tres" class="banner__tres">
+        </div>
+      </div>
+      <div class="banner__info">
+        <h1>Sistema Distribuido de monitoreo meteorologico aeronautico.</h1>
+        <a href="login/login.html" class="css-boton boton-primario">Iniciar Sesión</a>
+      </div>
+      <div class="banner__video">
+        <iframe src="https://www.youtube.com/embed/ZVQeTagj0AI" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section id="segundo" class="acordeones">
+    <div class="menu__acordeon" id="app2">
+      <div class="menu__acordeon__uno">
+        <div class="contenido__menu">      
+          [[listado]]
+          <div class="accordion accordion-flush" id="accordion">
+            <div class="accordion-item" v-for="imp of impar" v-for="nombre of nombres">
+              <h2 class="accordion-header" :id="[imp.f]">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="[imp.h2]" aria-expanded="false" :aria-controls="[imp.h]" @click="mensaje">
+                  [[imp.lugar]]
+                </button>
+              </h2>
+              <div :id="[imp.h]" class="accordion-collapse collapse" :aria-labelledby="[imp.f]" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h4><code>AERONAUTICA</code></h4>
+                  <h5>Historial del Lugar</h5>
+                  <h6><code>Nombre Lugar: [[imp.lugar]] </code></h6>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Asunto</th>
+                          <th scope="col">Estado</th>
+                          <th scope="col">Referencia</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr v-for="nombre of nombres" v-if="imp.lugar === nombre.lugar">
+                          <th scope="row"> [[nombre.desde]] </th>
+                          <td> [[nombre.espaniol_decodificado]] </td>
+                          <td>[[nombre.hasta]] - [[nombre.correlativo]]</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu__acordeon__dos">
+        <div class="contenido__menu">
+          [[listado]]
+          <div class="accordion accordion-flush" id="accordion2">
+            <div class="accordion-item" v-for="pa of par" v-for="nombre of nombres">
+              <h2 class="accordion-header" :id="[pa.f]">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="[pa.h2]" aria-expanded="false" :aria-controls="[pa.h]" @click="mensaje">
+                  [[pa.lugar]]
+                </button>
+              </h2>
+              <div :id="[pa.h]" class="accordion-collapse collapse" :aria-labelledby="[pa.f]" data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                  <h4><code>AERONAUTICA</code></h4>
+                  <h5>Historial del Lugar</h5>
+                  <h6><code>Nombre Lugar: [[pa.lugar]] </code></h6>
+
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Asunto</th>
+                          <th scope="col">Estado</th>
+                          <th scope="col">Referencia</th>
+                        </tr>
+                      </thead>
+  
+                      <tbody>
+                        <tr v-for="nombre of nombres" v-if="pa.lugar === nombre.lugar">
+                          <th scope="row"> [[nombre.desde]] </th>
+                          <td> [[nombre.espaniol_decodificado]] </td>
+                          <td>[[nombre.hasta]] - [[nombre.correlativo]]</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tercero" class="mapa__colores">
+    <div class="contenido__mapa__col">
+      <div class="cont__mapa__col">
+        <div id="map"></div>
+      </div>
+
+      <div class="cont__mapa_info">
+        <h1>Info 1</h1>
+      </div>
+    </div>
+  </section>
+  <section id="cuarto">
+    <h1 style="color: #fff;">Touch Slider</h1>
+  </section>
+  <section class="contacto" id="contacto">
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="img/footer/logo_1.svg" alt="footer__uno" class="footer__uno">
+        <img src="img/footer/logo_2.svg" alt="footer__dos" class="footer__dos">
+        <img src="img/footer/logo_3.svg" alt="footer__tres" class="footer__tres parpadeo__footer">
+      </div>
+      <h3 class="primera">Ifis <span>Nuklear</span></h3>
+      <p class="empresa">Sistema de Información de Vuelo por Internet.</p>
+      <img src="img/footer/EPB.png" class="logo__epb">
+      <p class="footer__empresa">2021 | IFIS NUKLEAR</p>
+    </footer>
+  </section>
+  <script src="js/header.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+  <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+  <script src="js/mapa.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js'></script>
+  <script src="js/map_color.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="js/acordeon_vue.js"></script>
+</body>
+</html>
