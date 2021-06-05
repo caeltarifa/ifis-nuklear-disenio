@@ -1,0 +1,81 @@
+.loader__page .inicial__uno,
+.loader__page .inicial__dos,
+.loader__page .inicial__tres{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.loader__page .inicial__uno{
+  width: 100px;
+  -webkit-animation: inicial__uno 5s infinite linear;
+}
+.loader__page .inicial__dos{
+  width: 200px;
+  z-index: 20;
+  -webkit-animation: inicial__dos 7s infinite linear;
+}
+.loader__page .inicial__tres{
+  width: 305px;
+  -webkit-animation: inicial__tres 30s infinite linear;
+}
+@-webkit-keyframes inicial__uno{
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes inicial__dos{
+  from{
+    -webkit-transform: rotate(359deg);
+  }
+  to{
+    -webkit-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes inicial__tres{
+  0%{transform: rotate(0deg);}
+  10%{transform: rotate(10deg);}
+  20%{transform: rotate(-20deg);}
+  30%{transform: rotate(30deg);}
+  40%{transform: rotate(-40deg);}
+  50%{transform: rotate(50deg);}
+  60%{transform: rotate(-60deg);}
+  70%{transform: rotate(70deg);}
+  80%{transform: rotate(-80deg);}
+  90%{transform: rotate(90deg);}
+  100%{transform: rotate(0deg);}
+}
+.loader__page{
+  position: fixed;
+  z-index: 25000;
+  background: #fff;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+.loader__page .escritura{
+  position: relative;
+  width: 400px;
+  height: 50%;
+  text-align: center;
+  top: 350px;
+}
+.loader__page .tit_upsilon{
+  position: absolute;
+  top: 180px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}

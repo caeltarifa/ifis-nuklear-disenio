@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+*,::before,::after{
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body{
+  margin: 3rem 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .938rem;
+  font-weight: 500;
+  color: #697477;
+  line-height: 1.6;
+  height: 100%;
+  overflow-y: hidden;
+}
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header a{
+  text-decoration: none;
+  color: #697477;
+}
+header .bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: transparent;
+}
+header .nav{
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px){
+  header .nav__menu{
+    position: fixed;
+    top: 3rem;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(255,255,255,.3);
+    transition: .5s;
+    backdrop-filter: blur(10px);
+  }
+}
+header .nav__item{
+  margin-bottom: 2rem;
+}
+header .nav__link{
+  position: relative;
+  color: #2a3b47;
+}
+header .nav__link:hover{
+  color: #5361ff;
+}
+header .nav__logo{
+  color: #fafaff;
+}
+header .nav__toggle{
+  color: #fafaff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+header .show{
+  right: 0;
+}
+header .active::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: .18rem;
+  left: 0;
+  top: 1.5rem;
+  background-color: #5361FF;
+}
+header .logo__aasana{
+  width: 100px;
+  height: 50px;
+}
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+  header .nav{
+    height: calc(3rem+1rem);
+  }
+  header .nav__list{
+    display: flex;
+  }
+  header .nav__item{
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+  header .nav__toggle{
+    display: none;
+  }
+  header .nav__link{
+    color: #fafaff;
+  }
+  header .nav__link:hover{
+    color: #fafaff;
+  }
+  header .active::after{
+    background-color: #fafaff;
+  }
+}
+@media screen and (min-width: 1024px){
+  header .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
